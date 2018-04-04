@@ -174,6 +174,8 @@ public:
         daysBox->setObjectName(QStringLiteral("daysBox"));
         daysBox->setMinimumSize(QSize(0, 25));
         daysBox->setFont(font);
+        daysBox->setMinimum(1);
+        daysBox->setMaximum(10);
 
         gridLayout->addWidget(daysBox, 10, 1, 1, 1);
 

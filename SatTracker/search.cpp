@@ -12,7 +12,7 @@ search::~search()
 {
 }
 
-void search::conductSearch()
+QUrl search::makeURL()
 {
 	searchParameters = new parameter();
 
@@ -24,10 +24,19 @@ void search::conductSearch()
 	QString days = QString::number(searchParameters->getDaysToPredict());
 	QString minElev = QString::number(searchParameters->getMinimumElevation());
 
+	QString appendable = noradId + "/" + latitude + "/" + longitude + "/" +
+		altitude + "/" + days + +"/" + minElev + "/&apiKey" + apiNo;
 
-	
-	
-	
+	QString madeURL = baseURL_ + appendable;
 
+	return QUrl(madeURL);
+}
+
+void search::conductSearch()
+{
+	dataCtrl = new FileDownloader(makeURL(), this);
+
+	connect(dataCtrl, SIGNAL(downloaded()), this, SLOT(loadData()));
+	
 
 }

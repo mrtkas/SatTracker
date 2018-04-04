@@ -23,7 +23,7 @@ void parameter::setApiNo(QString api)
 
 int parameter::getNoradID()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toInt();
 }
 void parameter::setNoradID(int IDnr)
 {
@@ -32,7 +32,7 @@ void parameter::setNoradID(int IDnr)
 
 float parameter::getObserverLatitude()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toFloat();
 }
 
 void parameter::setObserverLatitude(float lat)
@@ -42,7 +42,7 @@ void parameter::setObserverLatitude(float lat)
 
 float parameter::getObserverLongitude()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toFloat();
 }
 
 void parameter::setObserverLongitude(float lon)
@@ -52,7 +52,7 @@ void parameter::setObserverLongitude(float lon)
 
 float parameter::getObserverAltitude()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toFloat();
 }
 
 void parameter::setObserverAltitude(float alt)
@@ -62,7 +62,7 @@ void parameter::setObserverAltitude(float alt)
 
 int parameter::getDaysToPredict()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toInt();
 }
 
 void parameter::setDaysToPredict(int days)
@@ -72,7 +72,7 @@ void parameter::setDaysToPredict(int days)
 	
 int parameter::getMinimumElevation()
 {
-	return ui->noradIDText->toPlainText();
+	return ui->noradIDText->toPlainText().toInt();
 }
 
 void parameter::setMinimumElevation(int elev)

@@ -1,5 +1,6 @@
 #pragma once
 #include <qstring.h>
+#include "ui_sattracker.h"
 
 class parameter
 {
@@ -32,6 +33,6 @@ private:
 	int daysToPredict;
 	int minimumElevation;
 
-	Ui::SatTrackerClass ui;
+	Ui::SatTrackerClass* ui;
 };
 
