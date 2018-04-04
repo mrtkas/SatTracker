@@ -124,13 +124,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="output.cpp" />
+    <ClCompile Include="parameter.cpp" />
     <ClCompile Include="sattracker.cpp" />
+    <ClCompile Include="search.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="output.h" />
+    <ClInclude Include="parameter.h" />
+    <ClInclude Include="search.h" />
     <QtMoc Include="sattracker.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
