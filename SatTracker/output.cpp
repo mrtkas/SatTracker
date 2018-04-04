@@ -11,7 +11,7 @@ output::~output()
 {
 }
 
-void writeDataToTextBrowser()
-{
-	ui->satInfoBox->append(FileDownloader::downloadedData);
-}
+//void writeDataToTextBrowser()
+//{
+//	//ui->satInfoBox->append(FileDownloader::downloadedData);
+//}

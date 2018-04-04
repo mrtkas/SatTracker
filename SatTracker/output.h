@@ -12,7 +12,8 @@ public:
 	~output();
 
 private slots:
-	void writeDataToTextBrowser();
+	//void writeDataToTextBrowser();
+private:
 
 	Ui::SatTrackerClass* ui;
 };

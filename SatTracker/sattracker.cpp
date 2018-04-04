@@ -6,7 +6,7 @@ SatTracker::SatTracker(QWidget *parent)
 {
 	ui.setupUi(this);
 	connect(ui.submitButton, SIGNAL(clicked()), this, SLOT(outputSatelliteInfo()));
-	connect(this, SIGNAL(submitButtonClicked()), output, SLOT(writeDataToTextBrowser()));
+	//connect(this, SIGNAL(submitButtonClicked()), output, SLOT(writeDataToTextBrowser()));
 }
 
 void SatTracker::outputSatelliteInfo()
