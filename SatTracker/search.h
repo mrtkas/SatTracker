@@ -4,8 +4,10 @@
 #include <QUrl>
 #include "FileDownloader.h"
 
-class search : QObject
+class search : public QObject
 {
+	Q_OBJECT
+
 public:
 	search();
 	~search();
@@ -14,6 +16,7 @@ public:
 	void conductSearch();
 
 	parameter* searchParameters;
+	FileDownloader* dataCtrl;
 	const QString baseURL_ = "http://www.n2yo.com/rest/v1/satellite/radiopasses/";
 };
 

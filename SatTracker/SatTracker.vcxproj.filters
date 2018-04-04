@@ -56,21 +56,21 @@
     <ClInclude Include="stdafx.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="parameter.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="search.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="output.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="sattracker.h">
       <Filter>Header Files</Filter>
     </QtMoc>
     <QtMoc Include="FileDownloader.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="parameter.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="output.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="search.h">
       <Filter>Header Files</Filter>
     </QtMoc>
   </ItemGroup>

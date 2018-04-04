@@ -2,8 +2,11 @@
 #include <qstring.h>
 #include "ui_sattracker.h"
 
-class parameter
+class parameter : public QObject
 {
+
+	Q_OBJECT
+
 public:
 	parameter();
 	~parameter();

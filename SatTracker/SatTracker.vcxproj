@@ -136,9 +136,9 @@
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="FileDownloader.h" />
-    <ClInclude Include="output.h" />
-    <ClInclude Include="parameter.h" />
-    <ClInclude Include="search.h" />
+    <QtMoc Include="output.h" />
+    <QtMoc Include="parameter.h" />
+    <QtMoc Include="search.h" />
     <QtMoc Include="sattracker.h" />
     <ClInclude Include="stdafx.h" />
   </ItemGroup>
